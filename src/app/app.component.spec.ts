@@ -1,6 +1,5 @@
 import { TestBed, async } from '@angular/core/testing';
 
-
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
@@ -28,10 +27,12 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Routing Application');
+     expect(compiled.querySelector('h1').textContent).toContain('Routing Application');
   }));
 
   it('should have a start/end city & list of city attributes to be initialized', async(() => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.debugElement.componentInstance;
     expect(app.startCity).toBeDefined();
     expect(app.endCity).toBeDefined();
     //expect(app.cities)
