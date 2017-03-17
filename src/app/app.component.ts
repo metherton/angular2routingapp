@@ -17,10 +17,8 @@ export class AppComponent {
   endCity:  City;
 
   ngOnInit() {
-    this.title = 'Routing Application';
-    this.startCity = new City('New York', '40.0', '-73.5');
-    this.endCity = new City('Tokyo', '35.0', '139.5');
-    this.cities = [this.startCity, this.endCity];
+    this.title = "Routing Application";
+    this.cities = [ new City('New York', '40.0', '-73.5'), new City('Tokyo', '35.0', '139.5')];
   }
 
 }

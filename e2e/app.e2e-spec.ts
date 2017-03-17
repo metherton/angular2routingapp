@@ -7,7 +7,7 @@ describe('my-router App', () => {
     page = new MyRouterPage();
   });
 
-  it('should display message saying Routing Application', () => {
+  xit('should display message saying Routing Application', () => {
     page.navigateTo();
     expect(page.getParagraphText()).toEqual('Routing Application');
   });
@@ -16,7 +16,6 @@ describe('my-router App', () => {
     page.navigateTo();
     expect(page.lstStart().isDisplayed()).toBeTruthy();
     expect(page.lstEnd().isDisplayed()).toBeTruthy();
-
   });
 
 
